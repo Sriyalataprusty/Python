@@ -1,0 +1,8 @@
+print(type(12345.98))
+print(type("sriya"))
+print(type(True))
+name = input("Enter your name : ")
+length = len(name)
+print(type(length))
+print(type("number of letters in your name: "))
+print("number of letters in your name: " + str(length))
