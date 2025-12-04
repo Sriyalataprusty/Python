@@ -1,0 +1,16 @@
+print("welcome to Pizza Deliveries!")
+size = input("What size do you want? Small , Medium Or Large.\n ")
+pepporoni = input("Do you want to add pepporoni on your pizza? Y or N. \n")
+bill = 0
+if size == "Small":
+    bill = bill + 70
+elif size == "Medium":
+    bill = bill + 100
+else:
+    bill = bill + 150
+if pepporoni == "Y":
+    if size == "Small":
+        bill += 20
+    else:
+        bill += 30
+print(f"Your final bill is: {bill}")

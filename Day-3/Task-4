@@ -1,0 +1,18 @@
+print("Welcome to Treasure Island! ")
+Treasure = input("Your mission is to find treasure. left or right. \n")
+if Treasure == "left":
+    Ask = input("Swim or wait.")
+    if Ask == "Swim":
+        print("Game over")
+    elif Ask == "wait":
+        colour = input("Which door? Red,Blue & Yellow \n")
+        if colour == "Red" or colour == "Blue":
+            print("Game over!")
+        elif colour == "Yellow":
+            print("You win! Congratulation.")
+        else:
+            print("Invalid Input.")
+    else:
+        print("Invalid Input")
+else:
+    print("Game over! Good luck for next time.")
