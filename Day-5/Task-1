@@ -1,0 +1,4 @@
+Fruits = ["Apple", "pear", "orange"]
+for fruit in Fruits:
+    #print(fruit)
+    print(fruit + "pear")
