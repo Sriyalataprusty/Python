@@ -1,0 +1,5 @@
+dirty_dozen = ["Tomato", "potato", "Banana", "apple", "orange", "Brinjal", "Ginger", "Onion","Watermelon"]
+fruit = [ "Banana", "apple", "orange","Watermelon"]
+vegetable = ["Tomato", "potato",  "Brinjal", "Ginger", "Onion"]
+dirty_dozen = [fruit, vegetable]
+print(dirty_dozen[0][2])

@@ -1,0 +1,5 @@
+import random
+Friends = ["Sriya", "Anita", "Mihir", "beauty"]
+#print(random.choice(Friends))
+random_index = random.randint(0,3)
+print(random_index)

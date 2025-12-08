@@ -1,0 +1,5 @@
+fruit = ["Apple", "Orange", "Guava", "Banana", "Cherry", "Pomegranate", "Palm", "Cashew", "Avocado"]
+fruit[3] = "Lichi"
+print(fruit[3])
+fruit.extend(["Coconut", "Watermelon"])
+print(fruit)
