@@ -1,0 +1,8 @@
+def my_function(a):
+    if a <= 40:
+        print("Terrible")
+    if a >= 80:
+        return "pass"
+    else:
+        return "great"
+print(my_function(25))

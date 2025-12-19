@@ -1,0 +1,41 @@
+def add(n1, n2):
+    return n1 + n2
+
+def subtract(n1, n2):
+    return n1 - n2
+
+def multiplication(n1, n2):
+    return n1* n2
+
+def divide(n1, n2):
+    return n1/n2
+
+operations = {
+    "+": add,
+    "-": subtract,
+    "*": multiplication,
+    "/": divide,
+}
+
+def calculator():
+    should_accumulate = True
+    First_Number = float(input("What's the first number? "))
+
+    while should_accumulate:
+        for symbol in operations:
+            print(symbol)
+        operation_symbol = input("Choose a operation: ")
+        Second_Number = float(input("What's the next number? "))
+        answer = operations[operation_symbol](First_Number, Second_Number)
+        print(f"{First_Number} {operation_symbol} {Second_Number} = {answer}")
+
+        Answer = input(f"Type 'Y'to continue calculating with {answer}, or type 'n' to start a new to calculation: ") 
+
+        if Answer == "Y":
+            First_Number = answer
+        else:
+            should_accumulate = False
+            print("\n" * 20)
+            calculator()
+        
+calculator()
