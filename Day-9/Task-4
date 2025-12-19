@@ -1,0 +1,14 @@
+name = input("What is your name?\n ")
+price = int(input("What is your bid?\n "))  
+dictionary = {}
+dictionary[name] = price
+user = input("If there are other users who want to bid? Yes or No\n ")
+
+continue_bidding = True
+while continue_bidding:
+    name = input("What is your name?\n ")
+price = int(input("What is your bid?\n "))  
+dictionary = {}
+dictionary[name] = price
+user = input("If there are other users who want to bid? Yes or No. \n ").lower
+if user == "No":
