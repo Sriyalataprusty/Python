@@ -1,0 +1,13 @@
+fruit = "Banana"
+
+def food():
+    type = "Guava"
+    colour = "Green"
+    return f"type of food is: {type}"
+print(food())
+
+def fruits():
+    type = "Lichi"
+    colour = "red"
+    return f"Colour of food is: {colour}"
+print(f"fruit: {fruit}")
